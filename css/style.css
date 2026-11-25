@@ -1,3 +1,270 @@
-h1{
-    color: green;
+
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b10;
+    color: white;
+}
+
+/* COMMON SECTION STYLE */
+
+
+.demo-section h2 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+/* INDIVIDUAL SECTION COLORS */
+
+#navbar {
+    background: #182b3a;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#home {
+    background: #203d50;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#history {
+    background: #293849;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#types {
+    background: #344b43;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#techniques {
+    background: #3d4355;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#shelter {
+    background: #55483a;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#hazards {
+    background: #513b3b;
+        min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#records {
+    background: #343d50;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#clubs {
+    background: #354d4b;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#stories {
+    background: #504057;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#gallery {
+    background: #34485b;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#latest {
+    background: #4b4b38;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#guidelines {
+    background: #3d4650;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#footer {
+    background: #111820;
+    min-height: 350px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* HOVER EFFECT */
+
+.demo-section h2 {
+    transition: 0.3s ease;
+}
+
+.demo-section:hover h2 {
+    transform: scale(1.08);
+    letter-spacing: 11px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .demo-section {
+        min-height: 250px;
+    }
+
+    .demo-section h2 {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+
+    .demo-section:hover h2 {
+        letter-spacing: 5px;
+    }
+
 }
