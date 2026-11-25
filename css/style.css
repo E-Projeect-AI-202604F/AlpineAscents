@@ -23,38 +23,40 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    position: relative;
+
     z-index: 2;
 }
 
 /* INDIVIDUAL SECTION COLORS */
 
 #navbar {
-    background: #182b3a;
-        min-height: 350px;
+    background: #dbd8d8;
+    min-height: 100px;
     width: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    position: relative;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#navbar header img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
 }
 
 #home {
     background: #203d50;
-        min-height: 350px;
+    min-height: 430px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -68,8 +70,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -83,53 +83,43 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
-
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #techniques {
     background: #3d4355;
-         min-height: 350px;
+    min-height: 350px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #shelter {
     background: #55483a;
-        min-height: 350px;
+    min-height: 350px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #hazards {
     background: #513b3b;
-        min-height: 350px;
+    min-height: 350px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -143,9 +133,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
-
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -158,8 +145,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -173,8 +158,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -188,8 +171,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -203,8 +184,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -218,8 +197,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -233,8 +210,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
