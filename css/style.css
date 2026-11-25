@@ -76,7 +76,7 @@ body {
 
 #types {
     background: #344b43;
-        min-height: 350px;
+    min-height: 350px;
     width: 100%;
 
     display: flex;
@@ -91,7 +91,7 @@ body {
 
 #techniques {
     background: #3d4355;
-        min-height: 350px;
+         min-height: 350px;
     width: 100%;
 
     display: flex;
