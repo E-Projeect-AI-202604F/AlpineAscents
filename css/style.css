@@ -141,71 +141,83 @@ body {
 /* HISTORY */
 #history {
     background: #ffffff;
+    color: #000000; 
 }
 
 /* TYPES */
 #types {
     background: #f3faf7;
+    color: #000000;
 }
 
 /* TECHNIQUES */
 #techniques {
     background: #ffffff;
+    color: #000000;
 }
 
 /* SHELTERING */
 #shelter {
     background: #f1f8fa;
+    color: #000000;
 }
 
 /* HAZARDS */
 #hazards {
     background: #ffffff;
+    color: #000000;
 }
 
 /* RECORDS */
 #records {
     background: #f3faf7;
+    color: #000000;
 }
 
 /* CLUBS */
 #clubs {
     background: #ffffff;
+    color: #000000;
 }
 
 /* SUCCESS STORIES */
 #stories {
     background: #f1f8fa;
+    color: #000000;
 }
 
 /* GALLERY */
 #gallery {
     background: #ffffff;
+    color: #000000;
 }
 
 /* LATEST DEVELOPMENTS */
 #latest {
     background: #f3faf7;
+    color: #000000;
 }
 
 /* GUIDELINES */
 #guidelines {
     background: #ffffff;
+    color: #000000;
 }
 
 /* FOOTER */
 #footer {
     background: #f1f8fa;
+    color: #000000;
 }
 
 /* SECTION TEXT COLOR */
-.demo-section h1,
+/* .demo-section h1,
 .demo-section h2,
 .demo-section h3,
 .demo-section p,
 .demo-section span {
     color: #000000;
-}
+} */
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
