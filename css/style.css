@@ -1,245 +1,213 @@
-
-/* GLOBAL RESET */
-
+/* ALL ELEMENTS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
 body {
     font-family: Arial, sans-serif;
-    background: #080b10;
-    color: white;
+    background: #ffffff;
+    color: #000000;
 }
 
-/* COMMON SECTION STYLE */
-
-
-.demo-section h2 {
-    font-size: 42px;
-    font-weight: 800;
-    letter-spacing: 8px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-
-    z-index: 2;
-}
-
-/* INDIVIDUAL SECTION COLORS */
-
+/* NAVBAR SECTION */
 #navbar {
-    background: #dbd8d8;
-    min-height: 100px;
     width: 100%;
-
-    display: flex;
-    align-items: center;
-
+    padding: 20px;
     position: fixed;
     top: 0;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-#navbar header img {
-    width: 200px;
-    height: auto;
-    margin-left: 20px;
+    left: 0;
+    z-index: 1000;
 }
 
-#home {
-    background: #203d50;
-    min-height: 430px;
+/* NAVBAR HEADER */
+.navbar-header {
     width: 100%;
-
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#history {
-    background: #293849;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#types {
-    background: #344b43;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#techniques {
-    background: #3d4355;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#shelter {
-    background: #55483a;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#hazards {
-    background: #513b3b;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#records {
-    background: #343d50;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#clubs {
-    background: #354d4b;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#stories {
-    background: #504057;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#gallery {
-    background: #34485b;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#latest {
-    background: #4b4b38;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#guidelines {
-    background: #3d4650;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#footer {
-    background: #111820;
-    min-height: 350px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* HOVER EFFECT */
-
-.demo-section h2 {
+    justify-content: space-between;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
     transition: 0.3s ease;
 }
+/* LOGO */
+.logo h2 {
+    font-size: 22px;
+    color: #000000;
+}
 
-.demo-section:hover h2 {
-    transform: scale(1.08);
-    letter-spacing: 11px;
+/* NAVBAR LIST */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* NAVBAR LINKS */
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* HOVER COLOR */
+.navbar ul li a:hover {
+    color: #65c7ff;
+}
+
+/* UNDERLINE */
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #65c7ff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+    
+}
+
+/* HOVER UNDERLINE */
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* ACTIVE LINK COLOR */
+.navbar ul li a.active {
+    color: #65c7ff;
+}
+
+/* ACTIVE LINK UNDERLINE */
+.navbar ul li a.active::after {
+    width: 100%;
+}
+
+/* VISITOR COUNTER */
+.visitor-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* COMMON SECTION SETTINGS */
+#home,
+#history,
+#types,
+#techniques,
+#shelter,
+#hazards,
+#records,
+#clubs,
+#stories,
+#gallery,
+#latest,
+#guidelines,
+#footer {
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eeeeee;
+    scroll-margin-top: 123px;
+    color: #000000;
+}
+
+/* HOME */
+#home {
+    background: #ffffff;
+    min-height: 430px;
+    padding-top: 122px;
+}
+
+/* HISTORY */
+#history {
+    background: #ffffff;
+}
+
+/* TYPES */
+#types {
+    background: #f3faf7;
+}
+
+/* TECHNIQUES */
+#techniques {
+    background: #ffffff;
+}
+
+/* SHELTERING */
+#shelter {
+    background: #f1f8fa;
+}
+
+/* HAZARDS */
+#hazards {
+    background: #ffffff;
+}
+
+/* RECORDS */
+#records {
+    background: #f3faf7;
+}
+
+/* CLUBS */
+#clubs {
+    background: #ffffff;
+}
+
+/* SUCCESS STORIES */
+#stories {
+    background: #f1f8fa;
+}
+
+/* GALLERY */
+#gallery {
+    background: #ffffff;
+}
+
+/* LATEST DEVELOPMENTS */
+#latest {
+    background: #f3faf7;
+}
+
+/* GUIDELINES */
+#guidelines {
+    background: #ffffff;
+}
+
+/* FOOTER */
+#footer {
+    background: #f1f8fa;
+}
+
+/* SECTION TEXT COLOR */
+.demo-section h1,
+.demo-section h2,
+.demo-section h3,
+.demo-section p,
+.demo-section span {
+    color: #000000;
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 600px) {
-
-    .demo-section {
-        min-height: 250px;
-    }
-
-    .demo-section h2 {
-        font-size: 26px;
-        letter-spacing: 4px;
-    }
-
-    .demo-section:hover h2 {
-        letter-spacing: 5px;
-    }
 
 }
