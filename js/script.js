@@ -1,3 +1,6 @@
+// ==============================
+// WEBSITE SECTIONS
+// ==============================
 
 const sections = [
     "navbar",
@@ -16,28 +19,77 @@ const sections = [
     "footer"
 ];
 
+
+// ==============================
+// LOAD WEBSITE SECTIONS
+// ==============================
+
 sections.forEach(section => {
 
     fetch(`sections/${section}.html`)
-        .then(response => response.text())
+
+        .then(response => {
+
+            if (!response.ok) {
+                throw new Error(`Could not load ${section}.html`);
+            }
+
+            return response.text();
+
+        })
+
         .then(data => {
 
-            document.getElementById(section).innerHTML = data;
+            // Find section container
+            const sectionContainer = document.getElementById(section);
 
-            // NAVBAR LOAD HONE KE BAAD LINKS SELECT KARO
+            if (!sectionContainer) {
+                console.error(`Container not found: ${section}`);
+                return;
+            }
+
+            // Insert HTML
+            sectionContainer.innerHTML = data;
+
+
+            // ==============================
+            // NAVBAR FUNCTIONALITY
+            // ==============================
+
             if (section === "navbar") {
 
-                const navLinks = document.querySelectorAll(".navbar ul li a");
+                // Select all navbar links
+                const navLinks = document.querySelectorAll(
+                    "#navbar .navbar-nav .nav-link"
+                );
 
+                // Select mobile menu
+                const navbarMenu = document.getElementById("mainNavbar");
+
+
+                // Add click event to every link
                 navLinks.forEach(link => {
 
                     link.addEventListener("click", function () {
 
+                        // Remove active class from all links
                         navLinks.forEach(item => {
                             item.classList.remove("active");
                         });
 
+                        // Add active class to clicked link
                         this.classList.add("active");
+
+
+                        // Close mobile menu after clicking a link
+                        if (window.innerWidth < 1400 && navbarMenu) {
+
+                            const bsCollapse =
+                                bootstrap.Collapse.getOrCreateInstance(navbarMenu);
+
+                            bsCollapse.hide();
+
+                        }
 
                     });
 
@@ -46,9 +98,11 @@ sections.forEach(section => {
             }
 
         })
+
         .catch(error => {
+
             console.error(`Error loading ${section}:`, error);
+
         });
 
 });
-
