@@ -52,4 +52,3 @@ sections.forEach(section => {
 
 });
 
-
